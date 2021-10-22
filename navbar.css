@@ -1,3 +1,8 @@
+body {
+  background-color: #1e1e1e;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%231b1b1b' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
 #arrow {
   display: flex;
   position: absolute;
@@ -8,13 +13,17 @@
   justify-content: center;
   align-items: center;
   transition: 500ms;
+  background-color: gray;
+  z-index: 1;
 }
 #arrow:hover {
   transform: translate(20rem);
 }
+
 #arrowicon {
   font-size: 50px;
 }
+
 #nav {
   display: flex;
   flex-direction: column;
@@ -27,10 +36,10 @@
   border: 2px solid black;
   transition: transform 500ms;
   margin: -10px 0px -10px -10px;
+  z-index: 1;
+  background-color: gray;
 }
-/* #nav:hover {
-        transform: translate(0rem);
-      } */
+
 .navbutton {
   width: 8rem;
   height: 4rem;
@@ -38,19 +47,103 @@
   font-family: Arial, Helvetica, sans-serif;
   border: 2px solid black;
   border-radius: 20px;
-  box-shadow: 3px 3px 0px 3px rgb(37, 37, 37);
+  box-shadow: 3px 3px 0px 3px rgb(59, 59, 59);
   transition: 150ms;
 }
 .navbutton:hover {
   cursor: pointer;
   background-color: rgb(221, 221, 221);
+  animation-name: buttonhover;
+  animation-duration: 250ms;
 }
 .navbutton:active {
   transform: translate(3px, 3px);
   box-shadow: 1.5px 1.5px 0px 1.5px rgb(37, 37, 37);
 }
+
 .center {
   display: block;
   text-align: center;
   padding-top: 24.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: -8px;
+  width: 100%;
+  height: 1rem;
+}
+
+.item {
+  border: 2px solid black;
+  width: 100%;
+  height: 46.5rem;
+  margin-right: 0;
+}
+
+#head {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.box {
+  border-bottom: 2px solid black;
+  height: 20rem;
+  width: 96.2%;
+  float: right;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: rgb(56, 56, 56);
+  z-index: 0;
+}
+.box2 {
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 42.9%;
+  right: 0%;
+  float: right;
+  height: 5rem;
+  width: 96.3%;
+  background-color: rgb(56, 56, 56);
+}
+
+#picture {
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 3%;
+  top: 12%;
+}
+
+#picture:hover {
+  animation-name: picture;
+  animation-duration: 1s;
+}
+
+@keyframes picture {
+  from {
+    transform: scale(0px);
+  }
+  50% {
+    transform: scale(50px);
+  }
+  to {
+    transform: scale(0px);
+  }
+}
+
+@keyframes buttonhover {
+  from {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
 }
