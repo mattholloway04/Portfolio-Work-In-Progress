@@ -28,27 +28,50 @@
       </div>
       <!-- projects -->
       <div id="projects">
-        <a href="https://mattholloway04.github.io/profilePage/"
-          ><div class="projectitem preview">
-            <img src="../images/mario.png" alt="" /></div
-        ></a>
-        <div class="projectitem previewtext">Project Text Here</div>
-        <a href="https://mattholloway04.github.io/Tic-Tac-Toe/"
-          ><div class="projectitem preview">
-            <img src="../images/tictactoe.png" alt="" /></div
-        ></a>
-        <div class="projectitem previewtext">Project Text Here</div>
-        <a href="https://mattholloway04.github.io/Calculator/"
-          ><div class="projectitem preview">
-            <img src="../images/calculator.png" alt="" /></div
-        ></a>
-        <div class="projectitem previewtext">Project Text Here</div>
-        <a href="https://mattholloway04.github.io/groupProject/"
-          ><div class="projectitem preview">
-            <img src="../images/group.png" alt="" /></div
-        ></a>
-        <div class="projectitem previewtext">Project Text Here</div>
+        <div class="projectitem preview">
+          <img class="projectimage" src="../images/calculator.png" alt="" />
+          <div id="calculator" class="hidden">
+            A simple calculator that can add, subtract, multiply and divide.
+          </div>
+          <div class="button" onclick="about('calculator')">About</div>
+          <a class="visit" href="https://mattholloway04.github.io/Calculator/"
+            >Visit</a
+          >
+        </div>
+        <div class="projectitem previewtext">
+          <img class="projectimage" src="../images/tictactoe.png" alt="" />
+          <div id="tictactoe" class="hidden">
+            A Tic-Tac-Toe game that you can play with a friend.
+          </div>
+          <div class="button" onclick="about('tictactoe')">About</div>
+          <a class="visit" href="https://mattholloway04.github.io/Tic-Tac-Toe/"
+            >Visit</a
+          >
+        </div>
+        <!--  -->
+        <div class="projectitem">
+          <img class="projectimage" src="../images/group.png" alt="" />
+          <div id="groupproject" class="hidden">
+            A fake business website that a coding partner and I created about
+            "D.I.whY".
+          </div>
+          <div class="button" onclick="about('groupproject')">About</div>
+          <a class="visit" href="https://mattholloway04.github.io/groupProject/"
+            >Visit</a
+          >
+        </div>
+        <div class="projectitem previewtext">
+          <img class="projectimage" src="../images/mario.png" alt="" />
+          <div id="profilepage" class="hidden">
+            A profile page of Mario that I made.
+          </div>
+          <div class="button" onclick="about('profilepage')">About</div>
+          <a class="visit" href="https://mattholloway04.github.io/profilePage/"
+            >Visit</a
+          >
+        </div>
       </div>
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>
