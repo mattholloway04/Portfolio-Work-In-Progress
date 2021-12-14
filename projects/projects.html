@@ -15,8 +15,9 @@
           <p>&#8694;</p>
         </div>
         <div id="nav">
-          <a href="../index.html"><button class="navbutton">Home</button></a>
-          <button class="selectedbutton">Projects</button>
+          <a href="../index.html"><button class="navbutton">About</button></a>
+          <div class="pointing">➜</div>
+          <button id="selected" class="navbutton selected">Projects</button>
           <a href="../contact/contact.html"
             ><button class="navbutton">Contact</button></a
           >
@@ -44,7 +45,10 @@
             A Tic-Tac-Toe game that you can play with a friend.
           </div>
           <div class="button" onclick="about('tictactoe')">About</div>
-          <a class="visit" href="https://mattholloway04.github.io/Tic-Tac-Toe/"
+          <a
+            class="visit"
+            onclick="load()"
+            href="https://mattholloway04.github.io/Tic-Tac-Toe/"
             >Visit</a
           >
         </div>
