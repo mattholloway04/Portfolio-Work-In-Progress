@@ -66,9 +66,6 @@ body {
   color: rgb(149, 255, 251);
   border-bottom: 0.15vw solid rgb(149, 255, 251);
 }
-.selectedbutton:hover {
-  cursor: pointer;
-}
 .navbutton {
   width: 9vw;
   height: 3vw;
@@ -147,7 +144,7 @@ body {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 0.15vw solid rgb(149, 255, 251);
+  border: 0.3vw solid rgb(149, 255, 251);
   object-fit: cover;
 }
 
@@ -210,14 +207,14 @@ body {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  border: 0.5vw solid black;
+  border: 0.3vw solid rgb(149, 255, 251);
 }
 .about {
   display: flex;
   align-items: center;
-  border: 0.5vw solid black;
+  border: 0.3vw solid rgb(149, 255, 251);
   height: 14vw;
-  width: 24vw;
+  width: 24.4vw;
   position: absolute;
   border-radius: 1.5vw;
   background-color: rgb(52, 52, 52);
@@ -236,7 +233,7 @@ body {
   margin-right: 14vw;
   width: 9vw;
   height: 3vw;
-  border: 0.5vw solid black;
+  border: 0.3vw solid rgb(149, 255, 251);
   border-radius: 2vw;
   background-color: rgb(41, 41, 41);
   text-align: center;
@@ -255,7 +252,7 @@ body {
   margin-left: 14vw;
   width: 9vw;
   height: 3vw;
-  border: 0.5vw solid black;
+  border: 0.3vw solid rgb(149, 255, 251);
   border-radius: 2vw;
   background-color: rgb(41, 41, 41);
   text-align: center;
@@ -365,6 +362,43 @@ hr {
   background-color: rgb(68, 68, 68);
   cursor: pointer;
 }
+.background {
+  background-color: rgb(41, 41, 41);
+  width: 30%;
+  height: max-content;
+  border: 0.3vw solid rgb(149, 255, 251);
+  border-radius: 2vw;
+}
+/* resume */
+#resume {
+  height: 30vw;
+  width: 38vw;
+  position: absolute;
+  left: 29.5vw;
+  top: 22%;
+  border: 0.3vw solid rgb(149, 255, 251);
+  border-radius: 2vw;
+}
+#downloadbutton {
+  display: flex;
+  position: absolute;
+  width: 15vw;
+  height: 2vw;
+  background-color: rgb(41, 41, 41);
+  border: 0.3vw solid rgb(149, 255, 251);
+  color: rgb(149, 255, 251);
+  left: 42vw;
+  bottom: 5%;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border-radius: 2vw;
+  font-size: calc(100% / 1vw);
+}
+#downloadbutton:active {
+  color: rgb(149, 255, 251);
+}
 @media (max-width: 769px) and (orientation: portrait) {
   body {
     background-size: 4vw;
@@ -471,7 +505,7 @@ hr {
     margin-bottom: 2vw;
   }
   .projectimage {
-    border: 1vw solid black;
+    border: 0.5vw solid rgb(149, 255, 251);
   }
   .button {
     width: 20vw;
@@ -493,8 +527,8 @@ hr {
   }
   .about {
     height: 28vw;
-    width: 48vw;
-    border: 1vw solid black;
+    width: 49vw;
+    border: 0.5vw solid rgb(149, 255, 251);
     font-size: 4vw;
   }
   .button:hover,
@@ -527,6 +561,26 @@ hr {
   .selected {
     border-bottom: 0.5vw solid rgb(149, 255, 251);
   }
+  #send {
+    left: 30vw;
+    height: 5vw;
+    width: 15vw;
+    line-height: 5vw;
+    font-size: 5vw;
+  }
+  /* resume */
+  #downloadbutton {
+    width: 25vw;
+    height: 10vw;
+    left: 37vw;
+    font-size: 2.5vw;
+  }
+  #resume {
+    width: 75vw;
+    height: 60vw;
+    top: 28%;
+    left: 12vw;
+  }
 }
 
 @media (max-height: 769px) and (max-width: 1025px) and (orientation: landscape) {
@@ -535,7 +589,7 @@ hr {
     width: 30%;
   }
   .aboutme {
-    font-size: 125%;
+    font-size: 150%;
   }
   /* Projects */
   #projects {
@@ -544,4 +598,31 @@ hr {
     height: 85%;
   }
   /* contact */
+  #contact {
+    height: 50vw;
+    width: 60vw;
+    left: 20vw;
+  }
+  #email {
+    top: 40%;
+    width: 45vw;
+    height: 20vw;
+    font-size: 3vw;
+  }
+  #send {
+    left: 25vw;
+  }
+  /* resume */
+  #resume {
+    width: 50vw;
+    height: 40vw;
+    left: 25vw;
+  }
+  #downloadbutton {
+    width: 20vw;
+    height: 5vw;
+    left: 40vw;
+    bottom: 8%;
+    font-size: 2.2vw;
+  }
 }
